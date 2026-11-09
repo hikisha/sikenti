@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Website | Singkong Keju Kenti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .about-web-hero {
+            padding: 68px 0 75px;
+            text-align: center;
+            background: radial-gradient(circle at 85% 20%, #ffe5a2, transparent 25%),
+                        linear-gradient(135deg, #fff5d5, #fffdf7);
+        }
+        .about-web-hero h1 {
+            font: 800 clamp(42px, 6vw, 64px)/1.05 'Baloo 2', cursive;
+            color: #633f28;
+            margin-bottom: 12px;
+        }
+        .about-web-hero h1 span { color: #e77d20; }
+        .about-web-hero p {
+            max-width: 720px;
+            margin: auto;
+            color: #796858;
+            font-size: 14px;
+        }
+        .about-web-content { padding: 65px 0 85px; }
+        .about-web-intro {
+            padding: 30px;
+            border-radius: 24px;
+            background: #fff7df;
+            border: 1px solid #f1dfb9;
+            margin-bottom: 28px;
+        }
+        .about-web-intro h2, .info-card h2 {
+            color: #633f28;
+            font: 700 29px/1.15 'Baloo 2', cursive;
+            margin-bottom: 10px;
+        }
+        .about-web-intro p, .info-card p, .info-card li {
+            color: #766456;
+            font-size: 13px;
+            line-height: 1.85;
+        }
+        .about-web-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .info-card {
+            padding: 27px;
+            background: white;
+            border: 1px solid #f0dfbd;
+            border-radius: 22px;
+            box-shadow: 0 8px 24px rgba(100,64,35,.05);
+        }
+        .info-card .card-icon {
+            width: 48px; height: 48px;
+            display: grid; place-items: center;
+            border-radius: 15px;
+            background: #fff0bd;
+            font-size: 23px;
+            margin-bottom: 14px;
+        }
+        .info-card ul { padding-left: 19px; margin-top: 8px; }
+        .info-card li { margin-bottom: 6px; }
+        .source-list { display: grid; gap: 12px; margin-top: 12px; }
+        .source-item {
+            display: flex; justify-content: space-between; align-items: center;
+            gap: 15px; padding: 12px 14px; border-radius: 13px;
+            background: #fff8e8; color: #65452e; font-size: 12px;
+        }
+        .source-item a { color: #d86d12; font-weight: 700; white-space: nowrap; }
+        .note-box {
+            margin-top: 22px; padding: 23px 26px; border-radius: 20px;
+            background: linear-gradient(110deg, #ffe9ae, #fff5d8);
+            color: #6c4b2e; font-size: 13px; line-height: 1.8;
+        }
+        .note-box strong { color: #c56815; }
+        .about-web-bottom {
+            margin-top: 28px; padding: 30px; border-radius: 23px;
+            background: #633f28; color: #fff7e8; text-align: center;
+        }
+        .about-web-bottom h2 {
+            font: 700 30px 'Baloo 2', cursive; margin-bottom: 8px;
+        }
+        .about-web-bottom p { font-size: 13px; color: #ead9c5; }
+        @media (max-width: 650px) {
+            .about-web-grid { grid-template-columns: 1fr; }
+            .about-web-intro, .info-card { padding: 22px; }
+            .source-item { align-items: flex-start; flex-direction: column; gap: 4px; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="container nav-wrap">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">🍠</span>
+            <span>Singkong Keju <b>Kenti</b></span>
+        </a>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="produk.html">Produk</a>
+            <a href="profil.html">Profil</a>
+            <a href="kontak.html">Kontak</a>
+            <a href="about-web.html" class="active">Tentang Website</a>
+        </nav>
+    </div>
+</header>
+
+<section class="about-web-hero">
+    <div class="container">
+        <span class="eyebrow">💻 Behind This Website</span>
+        <h1>Tentang <span>Website Ini</span></h1>
+        <p>
+            Halaman ini berisikan informasi mengenai tujuan pembuatan website,
+            proses penyusunan, sumber konten, serta referensi yang digunakan
+            dalam pembuatan website Singkong Keju Kenti.
+        </p>
+    </div>
+</section>
+
+<main class="about-web-content">
+    <div class="container">
+        <section class="about-web-intro">
+            <span class="eyebrow">Latar Belakang</span>
+            <h2>Dibuat untuk Bahan Pembelajaran, Sekaligus Mempromosikan Usaha Keluarga.</h2>
+            <p>
+                Website Singkong Keju Kenti dibuat sebagai bagian dari pengerjaan
+                tugas mata pelajaran Informatika tahun ajaran 25/26 di SMAN 3 Bandung. Selain untuk menerapkan materi
+                pembuatan website, tugas ini juga menjadi kesempatan untuk
+                membantu memperkenalkan dan mempromosikan usaha makanan milik
+                orang tua. Melalui website ini, pengunjung dapat mengenal produk,
+                melihat pilihan menu dan harga, serta menemukan informasi untuk
+                melakukan pemesanan.
+            </p>
+        </section>
+
+        <div class="about-web-grid">
+            <section class="info-card">
+                <div class="card-icon">🎯</div>
+                <h2>Tujuan Pembuatan</h2>
+                <ul>
+                    <li>Memenuhi tugas praktik mata pelajaran Informatika.</li>
+                    <li>Menerapkan dasar HTML, CSS, dan JavaScript dalam sebuah website.</li>
+                    <li>Membantu mempromosikan produk Singkong Keju Kenti milik orang tua.</li>
+                    <li>Menyediakan informasi produk, pilihan rasa, harga, dan cara pemesanan dalam satu tempat.</li>
+                    <li>Melatih kreativitas, kemandirian, dan kemampuan merancang tampilan website yang mudah digunakan.</li>
+                </ul>
+            </section>
+
+            <section class="info-card">
+                <div class="card-icon">👥</div>
+                <h2>Sasaran Pengunjung</h2>
+                <p>
+                    Website ini ditujukan untuk masyarakat umum, khususnya calon
+                    pelanggan yang ingin mengetahui produk Singkong Keju Kenti.
+                </p>
+            </section>
+
+            <section class="info-card">
+                <div class="card-icon">📸</div>
+                <h2>Sumber Gambar dan Konten</h2>
+                <p>
+                    Foto-foto produk yang digunakan pada website merupakan
+                    dokumentasi pribadi milik orangtua saya, bukan mengambil dari
+                    website lain. Nama file gambar yang digunakan adalah:
+                </p>
+                <ul>
+                    <li>singkongkeju.jpg</li>
+                    <li>singkongbalado.jpg</li>
+                    <li>singkongmentah.jpg</li>
+                    <li>singkongoriginal.jpg</li>
+                </ul>
+                <p>
+                    Informasi nama produk, harga, alamat, nomor pemesanan, dan
+                    akun Instagram diperoleh dari informasi usaha Singkong Keju Kenti milik orangtua saya.
+                </p>
+            </section>
+
+            <section class="info-card">
+                <div class="card-icon">🧭</div>
+                <h2>Referensi dan Inspirasi</h2>
+                <p>
+                    Konsep tampilan website terinspirasi dari pola desain website
+                    e-marketplace di aplikasi pinterest dan toko online, seperti katalog
+                    produk, navigasi menu, kartu produk, informasi harga, serta
+                    bagian pemesanan. Referensi tersebut digunakan sebagai inspirasi
+                    penyusunan tampilan, bukan untuk menyalin
+                    foto atau identitas visual milik platform lain.
+                </p>
+                <div class="source-list">
+                    <div class="source-item">
+                        <span>GoFood — referensi layanan pemesanan makanan</span>
+                        <a href="https://gofood.co.id/" target="_blank">Kunjungi ↗</a>
+                    </div>
+                    <div class="source-item">
+                        <span>ShopeeFood — referensi layanan pesan antar</span>
+                        <a href="https://shopeefood.co.id/" target="_blank">Kunjungi ↗</a>
+                    </div>
+                    <div class="source-item">
+                        <span>GrabFood — referensi layanan pesan makanan</span>
+                        <a href="https://food.grab.com/id/id/" target="_blank">Kunjungi ↗</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-card">
+                <div class="card-icon">🛠️</div>
+                <h2>Teknologi yang Digunakan</h2>
+                <ul>
+                    <li><b>HTML</b> untuk menyusun struktur dan isi setiap halaman.</li>
+                    <li><b>CSS</b> untuk mengatur warna, tata letak, ukuran, font, dan tampilan responsif.</li>
+                    <li><b>JavaScript</b> untuk fungsi sederhana, seperti membuka dan menutup menu navigasi pada perangkat seluler.</li>
+                    <li><b>Visual Studio Code / Notepad</b> dapat digunakan sebagai aplikasi untuk mengedit kode website.</li>
+                </ul>
+            </section>
+
+            <section class="info-card">
+                <div class="card-icon">🎨</div>
+                <h2>Konsep Desain</h2>
+                <p>
+                    Website menggunakan warna oranye dan kuning pastel untuk
+                    memberikan kesan hangat, ceria, ramah, menggugah selera, juga saya 
+                    pilih karena warna tersebut ialah warna favorit saya.
+                    Jenis huruf dibuat rounded dengan ketebalan yang cukup agar
+                    terlihat menarik tetapi tetap nyaman dibaca. Susunan halaman
+                    dibuat konsisten supaya pengunjung mudah berpindah dari Home,
+                    Produk, Profil, Kontak, hingga halaman ini.
+                </p>
+            </section>
+        </div>
+
+        <div class="note-box">
+            <strong>Catatan:</strong> Tautan GoFood, ShopeeFood, dan GrabFood pada
+            website merupakan tautan menuju halaman layanan masing-masing.
+            Website ini berfungsi sebagai media
+            informasi dan promosi; pemesanan tetap dikonfirmasi melalui kontak
+            yang tersedia atau aplikasi layanan terkait.
+        </div>
+
+        <section class="about-web-bottom">
+            <h2>Terima Kasih Sudah Berkunjung! 💛</h2>
+            <p>
+                Semoga website ini dapat menjadi media belajar yang
+                bermanfaat sekaligus membantu memperkenalkan Singkong Keju Kenti
+                kepada lebih banyak orang.
+            </p>
+        </section>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container footer-grid">
+        <div>
+            <a href="index.html" class="logo footer-logo"><span class="logo-icon">🍠</span> Singkong Keju <b>Kenti</b></a>
+            <p>Cemilan sederhana dengan rasa yang bikin ceritamu jadi lebih seru!</p>
+        </div>
+        <div>
+            <h4>Menu</h4>
+            <a href="index.html">Home</a>
+            <a href="produk.html">Produk</a>
+            <a href="profil.html">Profil</a>
+            <a href="kontak.html">Kontak</a>
+            <a href="about-web.html">Tentang Website</a>
+        </div>
+        <div>
+            <h4>Hubungi Kami</h4>
+            <p>📍 Jl. Jembar 1 No. 6, Bandung</p>
+            <a href="https://wa.me/6289661951290" target="_blank">💬 WhatsApp</a>
+            <a href="https://www.instagram.com/singkongkejukenti/" target="_blank">📸 @singkongkejukenti</a>
+        </div>
+    </div>
+    <div class="copyright">© 2026 Singkong Keju Kenti. Dibuat dengan 💛</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
