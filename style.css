@@ -75,7 +75,7 @@ nav a {
     transition: .25s;
 }
 
-nav a:hover, nav a.active {
+nav a.active {
     background: var(--cream-2);
     color: var(--orange-dark);
 }
