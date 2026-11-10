@@ -505,3 +505,59 @@ nav a.active {
     .page-hero { padding: 50px 0; }
     .page-hero h1 { font-size: 44px; }
 }
+
+.form-pemesanan {
+    background: #fff8e8;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 650px;
+    margin: 30px auto;
+}
+
+.form-pemesanan h2 {
+    color: #d97706;
+    text-align: center;
+}
+
+.form-pemesanan p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-pemesanan label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.form-pemesanan input,
+.form-pemesanan select,
+.form-pemesanan textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #e8c98b;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.form-pemesanan textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.form-pemesanan button {
+    padding: 12px 18px;
+    margin-top: 18px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #e99a32;
+    color: white;
+    cursor: pointer;
+}
+
+.form-pemesanan button:hover {
+    background: #c87919;
+}
